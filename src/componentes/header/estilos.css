@@ -1,0 +1,16 @@
+.header{
+    width: 500px;
+    height: 100px;
+    background: #3d3d3d;
+    box-sizing: border-box;
+}
+.snborde{
+    border-radius: none;
+}
+.registro{
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    margin: 00px;
+    /* background: #fff; */
+}
