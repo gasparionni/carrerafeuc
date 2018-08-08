@@ -1,0 +1,11 @@
+*{
+    box-sizing: content-box;
+}
+
+.footer{
+    display: inline-block;
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+}

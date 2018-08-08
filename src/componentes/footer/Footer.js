@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import './estilosfooter.css';
 
 const styles = theme => ({
   root: {
@@ -19,16 +20,18 @@ function CenteredGridFooter(props) {
   const { classes } = props;
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={24}>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>
-            <span>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </span>
-          </Paper>
+    <div className='footer'>
+      <div className={classes.root}>
+        <Grid container spacing={24}>
+          <Grid item xs={12}>
+            <Paper className={classes.paper}>
+              <span>
+                  <p>Lorem ipsum dolor sit amet.</p>
+              </span>
+            </Paper>
+          </Grid>
         </Grid>
-      </Grid>
+      </div>
     </div>
   );
 }
