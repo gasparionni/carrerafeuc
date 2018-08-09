@@ -13,8 +13,8 @@ class App extends Component {
       <div>
         <CenteredGridHeader/>
         <CenteredGridContainer/>
-        <CenteredGridFooter/>
         <Registro/>
+        <CenteredGridFooter/>
       </div>
     );
   }

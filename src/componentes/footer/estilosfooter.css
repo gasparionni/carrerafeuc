@@ -3,9 +3,7 @@
 }
 
 .footer{
-    display: inline-block;
-    position: fixed;
-    bottom: 0px;
-    height: 100px;
+    position: absolute;
+    bottom: 0;
     width: 100%;
 }
