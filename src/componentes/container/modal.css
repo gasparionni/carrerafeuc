@@ -1,0 +1,14 @@
+.modal{
+    max-width: 800px;
+    max-height: 1000px;
+    border-radius: 5px;
+}
+
+.modalestilos{
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    margin: 40px auto;
+    background: #edeaea;
+    padding: 20px;
+}
