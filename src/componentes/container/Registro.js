@@ -98,7 +98,7 @@ class Formulario extends Component {
 
         {/* edad */}
         <label htmlFor="year">Edad</label>
-        <input type="number" name="year" id="year" min="1" max="99" 
+        <input type="number" name="year" id="year" 
           value={this.state.year}
           onChange={this.onChange.bind(this)}/>
 
@@ -135,7 +135,7 @@ class Formulario extends Component {
           id="contactemg"
           value={this.state.contactemg} 
           onChange={this.onChange.bind(this)}/>
-
+          
 
         <p>{JSON.stringify(this.state)}</p>
       </div>
