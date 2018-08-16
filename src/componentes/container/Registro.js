@@ -23,7 +23,7 @@ class Registro extends Component {
     render() {
       return (
         <div className="content-modal">
-          <button onClick={this.handleOpenModal} className="btn-registrar"><span>Registro</span></button>
+          <button onClick={this.handleOpenModal} className="btn-registrar"><span>Registrarme</span></button>
           <ReactModal isOpen={this.state.showModal} contentLabel="Minimal Modal Example" >
             <Formulario/> 
             <button onClick={this.handleCloseModal} className="btn-registrar"><span>Aceptar</span></button>
