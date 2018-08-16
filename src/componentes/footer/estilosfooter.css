@@ -1,9 +1,5 @@
-*{
-    box-sizing: content-box;
-}
-
 .footer{
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     width: 100%;
 }
