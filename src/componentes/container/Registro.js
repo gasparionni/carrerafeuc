@@ -80,6 +80,7 @@ class Formulario extends Component {
           onChange={this.onChange.bind(this)} 
           type="text" name="name" id="name"/>
         </div>
+
         <div>
           {/* genero */}
           <label htmlFor="sex">Sexo:</label>
@@ -90,18 +91,21 @@ class Formulario extends Component {
             <option value="Masculino">Masculino</option>
             <option value="Femenino">Femenino</option>
           </select>
+
         </div>
-        <div className="radios">
-          {/* categoria a correr */}
+        <div className="rdbtxd">
           <label htmlFor="categoria">Categoria:</label>
-          {/* <span className="grupoderadios"> */}
-          <input type="radio" name="categoria" id="categoria" value="10k"
-            onChange={this.onChange.bind(this)}/>10k
-          <input type="radio" name="categoria" id="categoria" value="5k"
-            onChange={this.onChange.bind(this)}/>5k
-          <input type="radio" name="categoria" id="categoria" value="3k"
-            onChange={this.onChange.bind(this)}/>3k
-          {/* </span> */}
+          <div className="radios">
+            <input type="radio" name="categoria" id="10k" value="10k"
+              onChange={this.onChange.bind(this)}/> 
+            <label htmlFor="10k">10k</label>
+            <input type="radio" name="categoria" id="5k" value="5k"
+              onChange={this.onChange.bind(this)}/>
+            <label htmlFor="5k">5k</label>
+            <input type="radio" name="categoria" id="3k" value="3k"
+              onChange={this.onChange.bind(this)}/>
+            <label htmlFor="3k">3k</label>
+          </div>
         </div>
         <div>
           {/* edad */}
@@ -132,7 +136,7 @@ class Formulario extends Component {
         {/* ajustar lo grande del textarea y la longitud de caracteres xd */}
 
         {/* nombre del contacto de emg */}
-        <label htmlFor="namecontactemg">Nombre/s:</label>
+        <label htmlFor="namecontactemg">Nombre/s del contacto de emergencia:</label>
         <input  
           type="text" name="namecontactemg" id="namecontactemg"
           value={this.state.namecontactemg} 
@@ -144,7 +148,6 @@ class Formulario extends Component {
           id="contactemg"
           value={this.state.contactemg} 
           onChange={this.onChange.bind(this)}/>
-          
 
         {/* <p>{JSON.stringify(this.state) } </p> */}
       </div>
