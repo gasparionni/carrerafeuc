@@ -58,7 +58,7 @@ input[type=email] {
 }
 .radios{
     margin: 10px 0px;
-    background: #45a049;
+    /* background: #45a049; */
 }
 input[type=radio]{
     display: inline-block;
