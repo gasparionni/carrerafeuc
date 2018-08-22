@@ -4,6 +4,7 @@ import './modal.css';
 import './estilosformulario.css';
 
 
+
 class Registro extends Component {
     constructor() {
       super()
@@ -23,7 +24,7 @@ class Registro extends Component {
     render() {
       return (
         <div className="content-modal">
-          <button onClick={this.handleOpenModal} className="btn-registrar"><span>Registrarme</span></button>
+        <button onClick={this.handleOpenModal} className="btn-registrar btn-centrar"><span>Registrarme</span></button>
           <ReactModal isOpen={this.state.showModal} contentLabel="Minimal Modal Example" >
             <Formulario/> 
             <button onClick={this.handleCloseModal} className="btn-registrar"><span>Aceptar</span></button>
@@ -90,15 +91,17 @@ class Formulario extends Component {
             <option value="Femenino">Femenino</option>
           </select>
         </div>
-        <div>
+        <div className="radios">
           {/* categoria a correr */}
           <label htmlFor="categoria">Categoria:</label>
+          {/* <span className="grupoderadios"> */}
           <input type="radio" name="categoria" id="categoria" value="10k"
             onChange={this.onChange.bind(this)}/>10k
           <input type="radio" name="categoria" id="categoria" value="5k"
             onChange={this.onChange.bind(this)}/>5k
           <input type="radio" name="categoria" id="categoria" value="3k"
             onChange={this.onChange.bind(this)}/>3k
+          {/* </span> */}
         </div>
         <div>
           {/* edad */}
@@ -143,7 +146,7 @@ class Formulario extends Component {
           onChange={this.onChange.bind(this)}/>
           
 
-        <p>{JSON.stringify(this.state)}</p>
+        {/* <p>{JSON.stringify(this.state) } </p> */}
       </div>
     );
   }
