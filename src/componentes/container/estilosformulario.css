@@ -24,7 +24,7 @@
     width: 200px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin: 5px auto;
 }
       
 .btn-registrar span {
@@ -48,52 +48,6 @@
     opacity: 1;
     right: 0;
 }
-/* label{
-    font-size: 20px;
-}
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-select {
-    width: 100%;
-    padding: 16px 20px;
-    border: none;
-    border-radius: 4px;
-}
-
-textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    resize: none;
-}
-button{
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-} */
-
 input[type=text], select,
 input[type=email] {
     width: 100%;
@@ -101,6 +55,16 @@ input[type=email] {
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+}
+.radios{
+    margin: 10px 0px;
+    background: #45a049;
+}
+input[type=radio]{
+    display: inline-block;
+    margin: 15px;
+    /* padding: 10px; */
+    /* background: #000; */
 }
 textarea{
     width: 100%;
@@ -174,8 +138,55 @@ textarea:focus {
     }
 }
 
-.formulario-registro{
+/* .formulario-registro{
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 }
+.formulario h2 {
+    font-size: 16px;
+    color: #001F3F;
+    margin-bottom: 20px;
+    margin-left: 20px; 
+}
+.formulario > div {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; }
+.formulario .radio label{
+    display: inline-block;
+    cursor: pointer;
+    color: #FF4136;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+.formulario .radio label:hover {
+    background: rgba(255, 65, 54, 0.1); 
+}
+.formulario .radio label:before{
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 3px solid #FF4136;
+}
+.formulario input[type="radio"] {
+    display: none; 
+}
+.formulario input[type="radio"]:checked + label:before {
+    display: none; 
+}
+.formulario input[type="radio"]:checked + label {
+    padding: 5px 15px;
+    background: #FF4136;
+    border-radius: 2px;
+    color: #fff; 
+} */
